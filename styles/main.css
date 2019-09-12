@@ -1,0 +1,29 @@
+button{
+	height: 50px;
+    width: 100px;
+	position: relative;
+}
+button:nth-child(2n+1){
+	background: linear-gradient(to right, #f58142, #c842f5);
+
+	/* background-color: red; */
+	/* background-color: linear-gradient(to top, red, orange); */
+	
+}
+button:nth-child(2n){
+	background-color: green;
+}
+
+button:nth-child(2n+1)::after{
+
+	content: ''; 
+    position: absolute;
+	right: -47px;
+    top: -1px;
+    border: 25px solid transparent;
+	/* border-image: linear-gradient(to right, #f58142, #c842f5); */
+    border-left: 20px solid;
+	
+
+	
+}
